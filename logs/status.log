@@ -1,0 +1,219 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spatial-core 0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) @ spatial-core >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) @ spatial-core <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ spatial-core ---
+Nov 6, 2013 3:36:18 PM com.hazelcast.config.XmlConfigBuilder
+INFO: Looking for hazelcast.xml config file in classpath.
+Nov 6, 2013 3:36:18 PM com.hazelcast.config.XmlConfigBuilder
+INFO: Using configuration file /Users/ruileal/Documentos/2GiveInsights/SpatialCore/spatial-core/target/classes/hazelcast.xml in the classpath.
+Nov 6, 2013 3:36:19 PM com.hazelcast.instance.DefaultAddressPicker
+INFO: Prefer IPv4 stack is true.
+Nov 6, 2013 3:36:19 PM com.hazelcast.instance.DefaultAddressPicker
+INFO: Picked Address[10.37.129.2]:5701, using socket ServerSocket[addr=/0.0.0.0,localport=5701], bind any local is true
+Nov 6, 2013 3:36:19 PM com.hazelcast.system
+INFO: [10.37.129.2]:5701 [dev] Hazelcast Community Edition 3.1 (20131011) starting at Address[10.37.129.2]:5701
+Nov 6, 2013 3:36:19 PM com.hazelcast.system
+INFO: [10.37.129.2]:5701 [dev] Copyright (C) 2008-2013 Hazelcast.com
+Nov 6, 2013 3:36:19 PM com.hazelcast.instance.Node
+INFO: [10.37.129.2]:5701 [dev] Creating MulticastJoiner
+Nov 6, 2013 3:36:19 PM com.hazelcast.core.LifecycleService
+INFO: [10.37.129.2]:5701 [dev] Address[10.37.129.2]:5701 is STARTING
+Nov 6, 2013 3:36:22 PM com.hazelcast.cluster.MulticastJoiner
+INFO: [10.37.129.2]:5701 [dev] 
+
+
+Members [1] {
+	Member [10.37.129.2]:5701 this
+}
+
+Nov 6, 2013 3:36:22 PM com.hazelcast.core.LifecycleService
+INFO: [10.37.129.2]:5701 [dev] Address[10.37.129.2]:5701 is STARTED
+KEEPALIVE!: true
+[Wed Nov 06 15:36:22 WET 2013] MIME map can't be loaded:java.lang.NullPointerException
+[Wed Nov 06 15:36:22 WET 2013] Servlet for path '/' already defined and no default will be used.
+[Wed Nov 06 15:36:22 WET 2013] TJWS httpd 0.0.0.0 - SimpleAcceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=8080] is listening.
+Nov 6, 2013 3:36:22 PM com.hazelcast.partition.PartitionService
+INFO: [10.37.129.2]:5701 [dev] Initializing cluster partition table first arrangement...
+Nov 6, 2013 3:36:23 PM org.infinispan.factories.GlobalComponentRegistry start
+INFO: ISPN000128: Infinispan version: Infinispan 'Brahma' 5.1.6.FINAL
+[Wed Nov 06 15:36:24 WET 2013] Servlet overriden by org.jboss.resteasy.jsapi.JSAPIServlet@161bfa3, for path:/rest-js
+[{"gridSize":17179869184,"totalElements":310196,"NSyntheses":0,"NSingularElements":310196,"reductionRate":0.0,"zoom":null,"processedTime":175370},{"gridSize":268435456,"totalElements":309308,"NSyntheses":867,"NSingularElements":308441,"reductionRate":0.0028627061599763026,"zoom":20,"processedTime":176695},{"gridSize":134217728,"totalElements":309308,"NSyntheses":867,"NSingularElements":308441,"reductionRate":0.0,"zoom":19,"processedTime":180403},{"gridSize":67108864,"totalElements":309287,"NSyntheses":887,"NSingularElements":308400,"reductionRate":6.789349127733768E-5,"zoom":18,"processedTime":181176},{"gridSize":33554432,"totalElements":309170,"NSyntheses":943,"NSingularElements":308227,"reductionRate":3.78289420505884E-4,"zoom":17,"processedTime":183198},{"gridSize":16777216,"totalElements":309031,"NSyntheses":1027,"NSingularElements":308004,"reductionRate":4.495908399909654E-4,"zoom":16,"processedTime":176185},{"gridSize":8388608,"totalElements":308826,"NSyntheses":1194,"NSingularElements":307632,"reductionRate":6.633638696441624E-4,"zoom":15,"processedTime":181892},{"gridSize":4194304,"totalElements":308401,"NSyntheses":1592,"NSingularElements":306809,"reductionRate":0.0013761794667547234,"zoom":14,"processedTime":184476},{"gridSize":2097152,"totalElements":307566,"NSyntheses":2350,"NSingularElements":305216,"reductionRate":0.0027075139185670505,"zoom":13,"processedTime":182335},{"gridSize":1048576,"totalElements":306245,"NSyntheses":3550,"NSingularElements":302695,"reductionRate":0.00429501310287872,"zoom":12,"processedTime":179480},{"gridSize":524288,"totalElements":303961,"NSyntheses":5586,"NSingularElements":298375,"reductionRate":0.007458080948260393,"zoom":11,"processedTime":189484},{"gridSize":262144,"totalElements":300338,"NSyntheses":8755,"NSingularElements":291583,"reductionRate":0.011919292277627669,"zoom":10,"processedTime":188685},{"gridSize":131072,"totalElements":294224,"NSyntheses":13904,"NSingularElements":280320,"reductionRate":0.020357064374138423,"zoom":9,"processedTime":184301},{"gridSize":65536,"totalElements":283336,"NSyntheses":22228,"NSingularElements":261108,"reductionRate":0.037005818695959536,"zoom":8,"processedTime":180331},{"gridSize":32768,"totalElements":262574,"NSyntheses":35570,"NSingularElements":227004,"reductionRate":0.07327695739334217,"zoom":7,"processedTime":191991},{"gridSize":16384,"totalElements":224754,"NSyntheses":51085,"NSingularElements":173669,"reductionRate":0.1440355861585686,"zoom":6,"processedTime":170580},{"gridSize":8192,"totalElements":169293,"NSyntheses":58968,"NSingularElements":110325,"reductionRate":0.2467631276862703,"zoom":5,"processedTime":130086},{"gridSize":4096,"totalElements":106713,"NSyntheses":53805,"NSingularElements":52908,"reductionRate":0.36965497687441295,"zoom":4,"processedTime":98144},{"gridSize":2048,"totalElements":53184,"NSyntheses":36577,"NSingularElements":16607,"reductionRate":0.5016164853391808,"zoom":3,"processedTime":68627},{"gridSize":1024,"totalElements":20613,"NSyntheses":17185,"NSingularElements":3428,"reductionRate":0.6124210288808665,"zoom":2,"processedTime":31528},{"gridSize":512,"totalElements":6720,"NSyntheses":6211,"NSingularElements":509,"reductionRate":0.6739921408819677,"zoom":1,"processedTime":13849},{"gridSize":256,"totalElements":1933,"NSyntheses":1894,"NSingularElements":39,"reductionRate":0.7123511904761906,"zoom":0,"processedTime":2969}]
+8037 [Acme.Utils.ThreadPool(0)-PooledThread: Acme.Serve.Serve$ServeConnection@1af7e68] ERROR org.jboss.resteasy.core.ExceptionHandler - Unknown exception while executing GET /s/script/jquery.min.map
+java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeIt(FileProvider.java:195)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:123)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:34)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.writeTo(AbstractWriterInterceptorContext.java:129)
+	at org.jboss.resteasy.core.interception.ServerWriterInterceptorContext.writeTo(ServerWriterInterceptorContext.java:62)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:118)
+	at org.jboss.resteasy.plugins.cache.server.ServerCacheInterceptor.aroundWriteTo(ServerCacheInterceptor.java:100)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPEncodingInterceptor.aroundWriteTo(GZIPEncodingInterceptor.java:89)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.ServerContentEncodingAnnotationFilter.aroundWriteTo(ServerContentEncodingAnnotationFilter.java:60)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:108)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:411)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:376)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.tjws.TJWSServletDispatcher.service(TJWSServletDispatcher.java:40)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at Acme.Serve.Serve$ServeConnection.runServlet(Serve.java:2326)
+	at Acme.Serve.Serve$ServeConnection.parseRequest(Serve.java:2280)
+	at Acme.Serve.Serve$ServeConnection.run(Serve.java:2052)
+	at Acme.Utils$ThreadPool$PooledThread.run(Utils.java:1402)
+	at java.lang.Thread.run(Thread.java:680)
+[Wed Nov 06 15:36:30 WET 2013] Unexpected problem running servlet
+org.jboss.resteasy.spi.UnhandledException: java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:247)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:149)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:416)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:376)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.tjws.TJWSServletDispatcher.service(TJWSServletDispatcher.java:40)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at Acme.Serve.Serve$ServeConnection.runServlet(Serve.java:2326)
+	at Acme.Serve.Serve$ServeConnection.parseRequest(Serve.java:2280)
+	at Acme.Serve.Serve$ServeConnection.run(Serve.java:2052)
+	at Acme.Utils$ThreadPool$PooledThread.run(Utils.java:1402)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeIt(FileProvider.java:195)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:123)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:34)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.writeTo(AbstractWriterInterceptorContext.java:129)
+	at org.jboss.resteasy.core.interception.ServerWriterInterceptorContext.writeTo(ServerWriterInterceptorContext.java:62)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:118)
+	at org.jboss.resteasy.plugins.cache.server.ServerCacheInterceptor.aroundWriteTo(ServerCacheInterceptor.java:100)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPEncodingInterceptor.aroundWriteTo(GZIPEncodingInterceptor.java:89)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.ServerContentEncodingAnnotationFilter.aroundWriteTo(ServerContentEncodingAnnotationFilter.java:60)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:108)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:411)
+	... 12 more
+
+[Wed Nov 06 15:36:30 WET 2013] Unexpected problem running servlet: org.jboss.resteasy.spi.UnhandledException: java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)
+[{"gridSize":67108864,"totalElements":49993,"NSyntheses":0,"NSingularElements":49993,"reductionRate":0.0,"zoom":null,"processedTime":22006},{"gridSize":33554432,"totalElements":46748,"NSyntheses":1791,"NSingularElements":44957,"reductionRate":0.06490908727221811,"zoom":17,"processedTime":22287},{"gridSize":16777216,"totalElements":46669,"NSyntheses":1850,"NSingularElements":44819,"reductionRate":0.0016899118678873615,"zoom":16,"processedTime":21167},{"gridSize":8388608,"totalElements":46500,"NSyntheses":1988,"NSingularElements":44512,"reductionRate":0.003621247509053127,"zoom":15,"processedTime":21281},{"gridSize":4194304,"totalElements":46175,"NSyntheses":2216,"NSingularElements":43959,"reductionRate":0.006989247311827929,"zoom":14,"processedTime":21615},{"gridSize":2097152,"totalElements":45500,"NSyntheses":2618,"NSingularElements":42882,"reductionRate":0.01461829994585817,"zoom":13,"processedTime":22813},{"gridSize":1048576,"totalElements":44170,"NSyntheses":3301,"NSingularElements":40869,"reductionRate":0.029230769230769282,"zoom":12,"processedTime":21130},{"gridSize":524288,"totalElements":42120,"NSyntheses":4181,"NSingularElements":37939,"reductionRate":0.04641159157799413,"zoom":11,"processedTime":20795},{"gridSize":262144,"totalElements":39722,"NSyntheses":5002,"NSingularElements":34720,"reductionRate":0.05693257359924031,"zoom":10,"processedTime":19220},{"gridSize":131072,"totalElements":36982,"NSyntheses":5855,"NSingularElements":31127,"reductionRate":0.06897940687780069,"zoom":9,"processedTime":19490},{"gridSize":65536,"totalElements":33967,"NSyntheses":6624,"NSingularElements":27343,"reductionRate":0.08152614785571355,"zoom":8,"processedTime":17970},{"gridSize":32768,"totalElements":30153,"NSyntheses":7473,"NSingularElements":22680,"reductionRate":0.11228545352842467,"zoom":7,"processedTime":17357},{"gridSize":16384,"totalElements":24878,"NSyntheses":8163,"NSingularElements":16715,"reductionRate":0.17494113355221708,"zoom":6,"processedTime":16972},{"gridSize":8192,"totalElements":17546,"NSyntheses":7826,"NSingularElements":9720,"reductionRate":0.29471822493769595,"zoom":5,"processedTime":13660},{"gridSize":4096,"totalElements":10293,"NSyntheses":5641,"NSingularElements":4652,"reductionRate":0.4133705687906075,"zoom":4,"processedTime":10097},{"gridSize":2048,"totalElements":5444,"NSyntheses":3313,"NSingularElements":2131,"reductionRate":0.4710968619450112,"zoom":3,"processedTime":6729},{"gridSize":1024,"totalElements":2767,"NSyntheses":1859,"NSingularElements":908,"reductionRate":0.49173401910360026,"zoom":2,"processedTime":4365},{"gridSize":512,"totalElements":1348,"NSyntheses":994,"NSingularElements":354,"reductionRate":0.5128297795446332,"zoom":1,"processedTime":2797},{"gridSize":256,"totalElements":593,"NSyntheses":492,"NSingularElements":101,"reductionRate":0.5600890207715133,"zoom":0,"processedTime":1331}]
+13066 [Acme.Utils.ThreadPool(0)-PooledThread: Acme.Serve.Serve$ServeConnection@1af7e68] INFO vast_research.spatial_core.Server - Starting getting (query) of twts on level 5 for bbox: Env[-126.298828125 : -63.720703125, 31.015278981711266 : 49.66762782262194]
+13187 [hz._hzInstance_1_dev.cached.thread-3] INFO vast_research.spatial_core.Server - Starting getting (query) JOBS for twts on zoom 5 on store jdbc:postgresql://localhost:5432/spatial-core?user=spatial&password=spatial for bbox: Env[-126.298828125 : -63.720703125, 31.015278981711266 : 49.66762782262194]
+13815 [hz._hzInstance_1_dev.cached.thread-3] INFO vast_research.spatial_core.Server - Getting ENTITIES IDX done in 627ms.
+13819 [hz._hzInstance_1_dev.cached.thread-2] INFO vast_research.spatial_core.Server - Starting getting entities & merging & writing synths JOB [1 - 24938] for Envelope: [Env[-126.298828125 : -63.720703125, 31.015278981711266 : 49.66762782262194]]
+13819 [hz._hzInstance_1_dev.cached.thread-1] INFO vast_research.spatial_core.Server - Starting getting entities & merging & writing synths JOB [24938 - 24948] for Envelope: [Env[-126.298828125 : -63.720703125, 31.015278981711266 : 49.66762782262194]]
+SELECT ST_AsBinary(_geometry), _attribute, _count,Density FROM twts_5 WHERE (_pk_id >= 1 AND _pk_id <24938) AND _spatial_type='Point' AND (_geometry && ST_MakeEnvelope(-126.298828125,31.015278981711266,-63.720703125,49.66762782262194, 4326) ) ORDER BY _pk_id
+SELECT ST_AsBinary(_geometry), _attribute, _count,Density FROM twts_5 WHERE (_pk_id >= 24938 AND _pk_id <24948) AND _spatial_type='Point' AND (_geometry && ST_MakeEnvelope(-126.298828125,31.015278981711266,-63.720703125,49.66762782262194, 4326) ) ORDER BY _pk_id
+[QUERY 29] - connection in 39ms.
+[QUERY 29] - statement in 41ms.
+[QUERY 28] - connection in 42ms.
+[QUERY 28] - statement in 42ms.
+[QUERY 28] - done in 93ms.
+[QUERY 28] - done & iterated in 115ms.
+13938 [hz._hzInstance_1_dev.cached.thread-1] INFO vast_research.spatial_core.Server - Getting SINGLE ENTITIES done in 119ms.
+SELECT _id, ST_AsBinary(_geometry), _attribute, _count, _references,Density FROM twts_5 WHERE (_pk_id >= 24938 AND _pk_id <24948) AND _spatial_type='GranularSynthesis' AND (_geometry && ST_MakeEnvelope(-126.298828125,31.015278981711266,-63.720703125,49.66762782262194, 4326) ) ORDER BY _pk_id
+[QUERY 29] - done in 140ms.
+[QUERY 28] - connection in 29ms.
+[QUERY 28] - statement in 29ms.
+[QUERY 28] - done in 134ms.
+[QUERY 28] - done & iterated in 134ms.
+14075 [hz._hzInstance_1_dev.cached.thread-1] INFO vast_research.spatial_core.Server - Getting SYNTH ENTITIES done in 256ms.
+14075 [hz._hzInstance_1_dev.cached.thread-1] INFO vast_research.spatial_core.Server - Ending getting entities & merging & writing synths JOB.
+14075 [hz._hzInstance_1_dev.cached.thread-1] INFO vast_research.spatial_core.Server - Getting+Merging+Writing ENTITIES done in 256ms.
+[QUERY 29] - done & iterated in 1108ms.
+14933 [hz._hzInstance_1_dev.cached.thread-2] INFO vast_research.spatial_core.Server - Getting SINGLE ENTITIES done in 1114ms.
+SELECT _id, ST_AsBinary(_geometry), _attribute, _count, _references,Density FROM twts_5 WHERE (_pk_id >= 1 AND _pk_id <24938) AND _spatial_type='GranularSynthesis' AND (_geometry && ST_MakeEnvelope(-126.298828125,31.015278981711266,-63.720703125,49.66762782262194, 4326) ) ORDER BY _pk_id
+[QUERY 29] - connection in 17ms.
+[QUERY 29] - statement in 18ms.
+[QUERY 29] - done in 100ms.
+[QUERY 29] - done & iterated in 1359ms.
+16297 [hz._hzInstance_1_dev.cached.thread-2] INFO vast_research.spatial_core.Server - Getting SYNTH ENTITIES done in 2478ms.
+16918 [hz._hzInstance_1_dev.cached.thread-2] INFO vast_research.spatial_core.Server - Ending getting entities & merging & writing synths JOB.
+16918 [hz._hzInstance_1_dev.cached.thread-2] INFO vast_research.spatial_core.Server - Getting+Merging+Writing ENTITIES done in 3099ms.
+17013 [hz._hzInstance_1_dev.cached.thread-3] INFO vast_research.spatial_core.Server - Ending getting JOBS.
+17014 [hz._hzInstance_1_dev.cached.thread-3] INFO vast_research.spatial_core.Server - Getting TOTAL JOB done in 3826ms.
+17144 [Acme.Utils.ThreadPool(0)-PooledThread: Acme.Serve.Serve$ServeConnection@1af7e68] INFO vast_research.spatial_core.Server - End getting (query).
+[{"gridSize":17179869184,"totalElements":310196,"NSyntheses":0,"NSingularElements":310196,"reductionRate":0.0,"zoom":null,"processedTime":175370},{"gridSize":268435456,"totalElements":309308,"NSyntheses":867,"NSingularElements":308441,"reductionRate":0.0028627061599763026,"zoom":20,"processedTime":176695},{"gridSize":134217728,"totalElements":309308,"NSyntheses":867,"NSingularElements":308441,"reductionRate":0.0,"zoom":19,"processedTime":180403},{"gridSize":67108864,"totalElements":309287,"NSyntheses":887,"NSingularElements":308400,"reductionRate":6.789349127733768E-5,"zoom":18,"processedTime":181176},{"gridSize":33554432,"totalElements":309170,"NSyntheses":943,"NSingularElements":308227,"reductionRate":3.78289420505884E-4,"zoom":17,"processedTime":183198},{"gridSize":16777216,"totalElements":309031,"NSyntheses":1027,"NSingularElements":308004,"reductionRate":4.495908399909654E-4,"zoom":16,"processedTime":176185},{"gridSize":8388608,"totalElements":308826,"NSyntheses":1194,"NSingularElements":307632,"reductionRate":6.633638696441624E-4,"zoom":15,"processedTime":181892},{"gridSize":4194304,"totalElements":308401,"NSyntheses":1592,"NSingularElements":306809,"reductionRate":0.0013761794667547234,"zoom":14,"processedTime":184476},{"gridSize":2097152,"totalElements":307566,"NSyntheses":2350,"NSingularElements":305216,"reductionRate":0.0027075139185670505,"zoom":13,"processedTime":182335},{"gridSize":1048576,"totalElements":306245,"NSyntheses":3550,"NSingularElements":302695,"reductionRate":0.00429501310287872,"zoom":12,"processedTime":179480},{"gridSize":524288,"totalElements":303961,"NSyntheses":5586,"NSingularElements":298375,"reductionRate":0.007458080948260393,"zoom":11,"processedTime":189484},{"gridSize":262144,"totalElements":300338,"NSyntheses":8755,"NSingularElements":291583,"reductionRate":0.011919292277627669,"zoom":10,"processedTime":188685},{"gridSize":131072,"totalElements":294224,"NSyntheses":13904,"NSingularElements":280320,"reductionRate":0.020357064374138423,"zoom":9,"processedTime":184301},{"gridSize":65536,"totalElements":283336,"NSyntheses":22228,"NSingularElements":261108,"reductionRate":0.037005818695959536,"zoom":8,"processedTime":180331},{"gridSize":32768,"totalElements":262574,"NSyntheses":35570,"NSingularElements":227004,"reductionRate":0.07327695739334217,"zoom":7,"processedTime":191991},{"gridSize":16384,"totalElements":224754,"NSyntheses":51085,"NSingularElements":173669,"reductionRate":0.1440355861585686,"zoom":6,"processedTime":170580},{"gridSize":8192,"totalElements":169293,"NSyntheses":58968,"NSingularElements":110325,"reductionRate":0.2467631276862703,"zoom":5,"processedTime":130086},{"gridSize":4096,"totalElements":106713,"NSyntheses":53805,"NSingularElements":52908,"reductionRate":0.36965497687441295,"zoom":4,"processedTime":98144},{"gridSize":2048,"totalElements":53184,"NSyntheses":36577,"NSingularElements":16607,"reductionRate":0.5016164853391808,"zoom":3,"processedTime":68627},{"gridSize":1024,"totalElements":20613,"NSyntheses":17185,"NSingularElements":3428,"reductionRate":0.6124210288808665,"zoom":2,"processedTime":31528},{"gridSize":512,"totalElements":6720,"NSyntheses":6211,"NSingularElements":509,"reductionRate":0.6739921408819677,"zoom":1,"processedTime":13849},{"gridSize":256,"totalElements":1933,"NSyntheses":1894,"NSingularElements":39,"reductionRate":0.7123511904761906,"zoom":0,"processedTime":2969}]
+100653 [Acme.Utils.ThreadPool(4)-PooledThread: Acme.Serve.Serve$ServeConnection@1eef1eb] ERROR org.jboss.resteasy.core.ExceptionHandler - Unknown exception while executing GET /s/script/jquery.min.map
+java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeIt(FileProvider.java:195)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:123)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:34)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.writeTo(AbstractWriterInterceptorContext.java:129)
+	at org.jboss.resteasy.core.interception.ServerWriterInterceptorContext.writeTo(ServerWriterInterceptorContext.java:62)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:118)
+	at org.jboss.resteasy.plugins.cache.server.ServerCacheInterceptor.aroundWriteTo(ServerCacheInterceptor.java:100)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPEncodingInterceptor.aroundWriteTo(GZIPEncodingInterceptor.java:89)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.ServerContentEncodingAnnotationFilter.aroundWriteTo(ServerContentEncodingAnnotationFilter.java:60)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:108)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:411)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:376)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.tjws.TJWSServletDispatcher.service(TJWSServletDispatcher.java:40)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at Acme.Serve.Serve$ServeConnection.runServlet(Serve.java:2326)
+	at Acme.Serve.Serve$ServeConnection.parseRequest(Serve.java:2280)
+	at Acme.Serve.Serve$ServeConnection.run(Serve.java:2052)
+	at Acme.Utils$ThreadPool$PooledThread.run(Utils.java:1402)
+	at java.lang.Thread.run(Thread.java:680)
+[Wed Nov 06 15:38:02 WET 2013] Unexpected problem running servlet
+org.jboss.resteasy.spi.UnhandledException: java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:247)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:149)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:416)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:376)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.tjws.TJWSServletDispatcher.service(TJWSServletDispatcher.java:40)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at Acme.Serve.Serve$ServeConnection.runServlet(Serve.java:2326)
+	at Acme.Serve.Serve$ServeConnection.parseRequest(Serve.java:2280)
+	at Acme.Serve.Serve$ServeConnection.run(Serve.java:2052)
+	at Acme.Utils$ThreadPool$PooledThread.run(Utils.java:1402)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeIt(FileProvider.java:195)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:123)
+	at org.jboss.resteasy.plugins.providers.FileProvider.writeTo(FileProvider.java:34)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.writeTo(AbstractWriterInterceptorContext.java:129)
+	at org.jboss.resteasy.core.interception.ServerWriterInterceptorContext.writeTo(ServerWriterInterceptorContext.java:62)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:118)
+	at org.jboss.resteasy.plugins.cache.server.ServerCacheInterceptor.aroundWriteTo(ServerCacheInterceptor.java:100)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPEncodingInterceptor.aroundWriteTo(GZIPEncodingInterceptor.java:89)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.plugins.interceptors.encoding.ServerContentEncodingAnnotationFilter.aroundWriteTo(ServerContentEncodingAnnotationFilter.java:60)
+	at org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext.proceed(AbstractWriterInterceptorContext.java:122)
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:108)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:411)
+	... 12 more
+
+[Wed Nov 06 15:38:02 WET 2013] Unexpected problem running servlet: org.jboss.resteasy.spi.UnhandledException: java.io.FileNotFoundException: resources/static/script/jquery.min.map (No such file or directory)

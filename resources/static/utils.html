@@ -1,0 +1,159 @@
+﻿<html>
+<head>
+<title>Spatial Granule-based Model - utils</title>
+<meta charset="utf-8" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+<!--script type="text/javascript">L_PREFER_CANVAS = true;</script-->
+<script src="script/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" src="js_functions.js"></script>
+
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+	<div id="utils-commands-section">
+		<div id="commands-section">
+			<h4>Upload</h4>
+			<form id="upload-form" enctype="multipart/form-data">
+	  			File: <input id="uploadfile" type="file" name="file"></input>
+	  			Dataset: <input id="uploaddataset" type="text" name="dataset"></input>
+	  			<input id="upload-form-submit"  type="submit" value="Upload"></input>
+			</form>
+	
+			<h4>Execute up</h4>
+			<form id="up-form">
+	  			Dataset:<input id="updataset" type="text" name="dataset"></input>
+	  			External:<a id="use-external-button" class="button">Use</a>
+				<select id="externalfunctions" style="display:none;">
+		  			<option value="accidents" selected>Accidents (CountPersons, CountFatals, CountDrunk, Density)</option>
+					<option value="tweets">Tweets (Density)</option>  			
+					<option value="" selected></option>
+				</select>	  			
+	  			<input id="up-form-submit"  type="submit" value="Execute up"></input>
+			</form>
+			
+			<h4>Download dataset / resolution</h4>
+			<form id="down-form">
+	  			Dataset:<input id="downdataset" type="text" name="dataset"></input>
+	  			Zoom:<input id="downzoom" type="text" name="zoom"></input>
+	  			<input id="down-form-submit"  type="submit" value="Download"></input>
+			</form>
+		</div>
+		<div id="monitor-section">
+			<h4>Server monitor - Operations</h4>
+			<a id="refresh-monitor-button" class="button">Refresh</a>
+			<div id="monitor"></div>
+		</div>
+	</div>
+	
+	<div id="utils-status-section">
+		<a id="refresh-status-button" class="button">Refresh</a>
+		<div id="status"></div>
+	</div>
+	
+	<script>
+		$(document).ready(function() {
+			
+			$("#refresh-monitor-button").click(function(){
+				$.ajax({
+					  url: "http://"+ myip + ":" + myport + "/monitor"
+					})
+					  .done(function( data ) {
+						  var html = "<table id='monitor-table'><thead><tr><th>Type</th><th>Description</th><th>Start Time</th><th>Duration</th></tr></thead><tbody>";
+						  for (i in data) {
+							  var item = data[i];
+							  var start = new Date(item.start);
+							  var startStr = start.getDate()+"-"+(start.getMonth()+1)+"-"+start.getFullYear()+" "+start.getHours()+":"+start.getMinutes()+":"+start.getSeconds();
+							  var dur = (item.end == -1) ? "--" : item.end+" ms";
+							  html += "<tr><td>"+item.type+"</td><td>"+item.op+"</td><td>"+startStr+"</td><td>"+dur+"</td></tr>";	  
+						  }
+						  html += "</tbody></table>";
+						  $("#monitor").html(html);
+					  });
+			});
+			
+			
+			$("#refresh-status-button").click(function(){
+				$.ajax({
+					  url: "http://"+ myip + ":" + myport + "/status"
+					})
+					  .done(function( data ) {
+						  $("#status").html("<pre>"+data+"</pre>");
+					  });
+			});
+			
+			
+			$("#use-external-button").click(function(){
+				$("#externalfunctions").toggle();
+			});
+
+			$("#upload-form-submit").click(function( event ) {
+				event.preventDefault();
+				console.log(event);
+				var dataset = event.target.form[1].value;
+				var file = event.target.form[0].files[0];
+											
+				if (dataset != undefined && dataset != "" && file != undefined) {
+					var formData = new FormData($('#upload-form')[0]);
+					console.log(formData);
+					$.ajax({
+						  type: "POST",
+						  cache: false,
+					      contentType: false,
+					      processData: false,
+						  url: "http://"+ myip + ":" + myport + "/upload/batch/" + dataset,
+						  data: formData
+						})
+						  .done(function( data ) {
+							$("#status").html("Doing it ... (please refresh)!");
+						  })
+						 .fail(function( jqxhr, textStatus, error ) {
+							    var err = textStatus + ", " + error;
+							    console.log( "Request Failed: " + err);
+							 });						  
+				}
+			});			
+			
+			
+			$("#up-form").submit(function( event ) {
+				event.preventDefault();
+				var dataset = event.target[0].value;
+				var externalFunc = event.target[1].value;
+				
+				if (dataset != undefined && dataset != "") {
+					var url = "http://"+ myip + ":" + myport + "/executeup/" + dataset;
+					if (externalFunc!="") {
+						url += "?externalFunctions="+externalFunc;
+					}
+					
+					$.ajax({
+						  url: url
+						})
+						  .done(function( data ) {
+							$("#status").html("Doing it ... (please refresh)!");
+						  });					
+				}
+			});
+			
+			$("#down-form").submit(function( event ) {
+				event.preventDefault();
+				var dataset = event.target[0].value;
+				var zoom = event.target[1].value
+				
+				if (dataset != undefined && dataset != "" && zoom!= undefined && zoom != "") {
+					$("#status").html("Doing it ... (please wait)!");
+					$.ajax({
+						  url: "http://"+ myip + ":" + myport + "/download/" + dataset + "/" + zoom
+						})
+						  .done(function( data ) {
+							$("#status").html("<pre>"+data+"</pre>");
+						  });					
+				}
+			});					
+			
+		});
+	</script>
+</body>
+</html>
