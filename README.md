@@ -11,3 +11,5 @@ The prototype receives data at finest level of detail and automatically generali
 Then, it allows to choose the level of detail according the map zoom level. This way, according to the map zoom level, we may load much less data to client without affecting the analytical capability.
 
 
+![Alt text](https://github.com/RFASilva/spatial-core/blob/master/screenshot.png "Screenshot Spatial-Core")
+
